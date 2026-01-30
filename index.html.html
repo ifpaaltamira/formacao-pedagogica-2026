@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formação Pedagógica 2026 — Programação</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --g900:#0b3d2e;
+      --g800:#0f5132;
+      --g700:#146c43;
+      --g100:#e9f7ef;
+      --g050:#f4fbf7;
+    }
+
+    body{
+      background: linear-gradient(180deg, var(--g050), #fff 35%);
+    }
+
+    .hero{
+      color:#fff;
+      background: linear-gradient(135deg, var(--g900), var(--g700));
+      border-bottom-left-radius: 1.25rem;
+      border-bottom-right-radius: 1.25rem;
+    }
+
+    .hero small{
+      opacity:.9;
+    }
+
+    .card{
+      border: 1px solid rgba(20,108,67,.16);
+      border-radius: 1rem;
+      box-shadow: 0 10px 22px rgba(11,61,46,.06);
+    }
+
+    .section-title{
+      color: var(--g900);
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+
+    .badge-soft{
+      background: rgba(233,247,239,.85);
+      border: 1px solid rgba(20,108,67,.25);
+      color: var(--g800);
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .4rem .7rem;
+      display:inline-block;
+    }
+
+    /* Table look */
+    .table thead th{
+      background: rgba(20,108,67,.10);
+      color: var(--g900);
+      border-bottom: 1px solid rgba(20,108,67,.22) !important;
+      white-space: nowrap;
+    }
+    .table tbody td{
+      vertical-align: middle;
+    }
+    .col-time{
+      width: 140px;
+      white-space: nowrap;
+      font-weight: 700;
+      color: var(--g800);
+    }
+    .row-break{
+      border-left: 4px solid rgba(20,108,67,.18);
+      padding-left: .75rem;
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{ background:#fff !important; }
+      .hero{ border-radius:0 !important; }
+      .no-print{ display:none !important; }
+      .card{ box-shadow:none !important; }
+      .page-break{ page-break-before: always; }
+      .table{ font-size: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="hero py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
+        <div>
+          <div class="badge-soft mb-3">IFPA • Campus Altamira</div>
+          <h1 class="display-6 fw-bold mb-1">Formação Pedagógica — 2026</h1>
+          <small>“Ser Professor, ou Estar professor?” • 05 e 06/02/2026</small>
+        </div>
+
+        <div class="no-print d-flex flex-wrap gap-2">
+          <a class="btn btn-light btn-sm rounded-5 px-3" href="#dia1">Dia 1</a>
+          <a class="btn btn-outline-light btn-sm rounded-5 px-3" href="#dia2">Dia 2</a>
+          <a class="btn btn-outline-light btn-sm rounded-5 px-3" href="#avisos">Avisos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-4">
+
+    <!-- DIA 1 -->
+    <section id="dia1" class="mb-4">
+      <div class="card">
+        <div class="card-body p-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <div>
+              <h2 class="h4 section-title mb-0">05/02/2026 — Quinta-feira</h2>
+              <div class="text-secondary">Programação do dia</div>
+            </div>
+            <span class="badge-soft">Início: 8h30</span>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead>
+                <tr>
+                  <th class="col-time">Horário</th>
+                  <th>Atividade</th>
+                  <th style="min-width:220px;">Responsável</th>
+                  <th style="min-width:260px;">Observações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-time">8h30–9h</td>
+                  <td><div class="row-break"><strong>Acolhida: Boas vindas</strong></div></td>
+                  <td>Pedagogia / DEPE / DEPPIE</td>
+                  <td>Recepção e Abertura</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">9h–12h30</td>
+                  <td><div class="row-break"><strong>I — Índices, indicadores e rendimento 2025</strong><br>
+                    <span class="text-secondary">Quadro demonstrativo do rendimento dos alunos em 2025</span></div></td>
+                  <td>Prof. Dr. Paulo Altino</td>
+                  <td>Apresentação e Discussão</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">—</td>
+                  <td><div class="row-break"><strong>II — Jornada Educacional da Formação Pedagógica</strong><br>
+                    <span class="text-secondary">Apresentação da Jornada Educacional</span></div></td>
+                  <td>—</td>
+                  <td></td>
+                </tr>
+
+                <tr class="table-success">
+                  <td class="col-time">Pausa</td>
+                  <td><strong>Pausa para o lanche  Matutino</strong></td>
+                  <td>—</td>
+                  <td>Intervalo</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">—</td>
+                  <td><div class="row-break"><strong>1º Pilar — Identidade e Propósito do professor</strong><br>
+                    <span class="text-secondary">Construindo a identidade e o propósito do professor</span></div></td>
+                  <td>—</td>
+                  <td>Dinâmica/atividade conforme orientação</td>
+                </tr>
+
+                <tr class="table-success">
+                  <td class="col-time">Almoço</td>
+                  <td><strong>Intervalo para Almoço</strong></td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">14h30–18h30</td>
+                  <td><div class="row-break"><strong>III — Rediscutindo ações</strong><br>
+                    <span class="text-secondary">Acompanhamento pedagógico, registros acadêmicos, permanência, rendimento e responsabilidade compartilhada</span></div></td>
+                  <td>Profa. Rosangela Emerique</td>
+                  <td>Alinhamentos e encaminhamentos</td>
+                </tr>
+
+                <tr class="table-success">
+                  <td class="col-time">Pausa</td>
+                  <td><strong>Pausa para o lanche - Vespertino</strong></td>
+                  <td>—</td>
+                  <td>Intervalo</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">—</td>
+                  <td><div class="row-break"><strong>2º Pilar — Compromisso Transformador Docente</strong><br>
+                    <span class="text-secondary">Perspectivas, desafios e mudanças</span></div></td>
+                  <td>—</td>
+                  <td>Encerramento do Dia </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIA 2 -->
+    <section id="dia2" class="mb-4 page-break">
+      <div class="card">
+        <div class="card-body p-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <div>
+              <h2 class="h4 section-title mb-0">06/02/2026 — Sexta-feira</h2>
+              <div class="text-secondary">Programação do dia</div>
+            </div>
+            <span class="badge-soft">Início: 8h30</span>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead>
+                <tr>
+                  <th class="col-time">Horário</th>
+                  <th>Atividade</th>
+                  <th style="min-width:220px;">Responsável</th>
+                  <th style="min-width:260px;">Observações</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="col-time">8h30–10h</td>
+                  <td><div class="row-break"><strong>3º Pilar — Relação Humanizada</strong><br>
+                    <span class="text-secondary">Saber por meio do diálogo e da alteridade pedagógica</span></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr class="table-success">
+                  <td class="col-time">Pausa</td>
+                  <td><strong>Pausa para o lanche - Matutino</strong></td>
+                  <td>—</td>
+                  <td>Intervalo</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">10h30–12h30</td>
+                  <td><div class="row-break"><strong>4º Pilar — Impacto e Legado</strong><br>
+                    <span class="text-secondary">Formação integral do aluno: inspiração, orientação e preparo para o futuro</span></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr class="table-success">
+                  <td class="col-time">Almoço</td>
+                  <td><strong>Intervalo para Almoço</strong></td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+
+                <tr>
+                  <td class="col-time">—</td>
+                  <td><div class="row-break"><strong>IV — Culminância</strong><br>
+                    <span class="text-secondary">Avaliação da Formação e Encaminhamentos</span></div></td>
+                  <td>Todos</td>
+                  <td>Fechamento Geral</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AVISOS -->
+    <section id="avisos" class="mb-5 page-break">
+      <div class="card">
+        <div class="card-body p-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+            <div>
+              <h2 class="h4 section-title mb-0">Avisos Institucionais</h2>
+              <div class="text-secondary">Rotinas e informes dos setores</div>
+            </div>
+            <span class="badge-soft">Dia 02 - 14h30 às 18h</span>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead>
+                <tr>
+                  <th style="min-width:220px;">Setor</th>
+                  <th>Assunto</th>
+                  <th style="min-width:140px;">Horário</th>
+                  <th style="min-width:220px;">Responsável</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold text-success">Coordenação de Estágio</td>
+                  <td>Rotinas e procedimentos atinentes à coordenação de Estágio</td>
+                  <td class="col-time">14h30–18h</td>
+                  <td>Maurício Medeiros</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-success">Biblioteca</td>
+                  <td>Rotina, uso do espaço bibliográfico e atividades do setor</td>
+                  <td class="col-time">14h30–18h</td>
+                  <td>Ariane Nascimento</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-success">CAE</td>
+                  <td>Informações da assistência estudantil</td>
+                  <td class="col-time">14h30–18h</td>
+                  <td>Karina Karla</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-success">DTI</td>
+                  <td>Rotinas e demandas de TI (suporte e solicitações)</td>
+                  <td class="col-time">14h30–18h</td>
+                  <td>Jackson Queiroz</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="no-print d-flex flex-wrap gap-2 justify-content-end mt-3">
+            <button class="btn btn-success rounded-5 px-4" onclick="window.print()">Gerar PDF (Imprimir)</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
